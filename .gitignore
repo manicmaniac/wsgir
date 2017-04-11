@@ -1,0 +1,8 @@
+*.pyc
+.python-version
+__pycache__/
+build/
+venv/
+wsgir.db
+wsgir.egg-info/
+wsgir/wsgir.log

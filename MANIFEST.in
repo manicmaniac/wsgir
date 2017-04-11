@@ -1,0 +1,3 @@
+graft wsgir/templates
+graft wsgir/static
+include wsgir/schema.sql

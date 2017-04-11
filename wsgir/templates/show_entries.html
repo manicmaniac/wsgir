@@ -1,0 +1,5 @@
+{ include('_entry_form.html') if session.get('logged_in') else '' }
+<ul class=entries>
+  { '<li><em>Unbelievable. No entries here so far</em>' if not entries else '' }
+  { ''.join('<li><h2>{title}</h2>{text}'.format(title=e(entry[b'title']), text=entry[b'text']) for entry in entries) }
+</ul>

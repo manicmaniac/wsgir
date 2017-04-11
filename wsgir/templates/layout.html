@@ -1,0 +1,11 @@
+<!doctype html>
+<title>WSGIr</title>
+<link rel=stylesheet type=text/css href="/static/style.css">
+<div class=page>
+  <h1>WSGIr</h1>
+  <div class=metanav>
+    <a href="{ '/logout">log out' if session.get('logged_in') else '/login">log in' }</a>
+  </div>
+  { ''.join('<div class=flash>{}</div>'.format(e(message)) for message in flashes) }
+  { body }
+</div>
